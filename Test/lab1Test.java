@@ -6,7 +6,7 @@ public class lab1Test {
 
     @Test
     public void testweightcheck() {
-        lab1 tester = new lab1();
+        Weight tester = new Weight();
         assertEquals(false,tester.weightcheck(2));
     }
 }
