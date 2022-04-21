@@ -1,23 +1,26 @@
 import java.util.*;
 public class lab1 {
     public static Scanner scanner =new Scanner(System.in);
-    public static void main(String[] args){
+    public  void main(String[] args){
         int weight;
         System.out.println("enter watermelon weight");
         weight = scanner.nextInt();
-        weight = weightcheck(weight);
-        if(weight%2==0)
+        boolean w = weightcheck(weight);
+        if(w)
             System.out.println("Yes");
         else
             System.out.println("No");
     }
-    static int weightcheck( int w){
+    public  boolean weightcheck( int w){
         if(w<1 || w>100)
         {
             System.out.println("Enter a valid number");
             w = scanner.nextInt();
             weightcheck(w);
         }
-        return w;
+        if (w%2 == 0)
+            return true;
+        else
+            return false;
     }
 }
