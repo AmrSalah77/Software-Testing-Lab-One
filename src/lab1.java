@@ -18,7 +18,7 @@ public class lab1 {
             w = scanner.nextInt();
             weightcheck(w);
         }
-        if (w%2 == 0)
+        if (w%2 == 0 && w>2)
             return true;
         else
             return false;
