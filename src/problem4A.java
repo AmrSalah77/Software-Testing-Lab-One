@@ -1,5 +1,5 @@
 import java.util.*;
-public class lab1 {
+public class problem4A {
     public static Scanner scanner =new Scanner(System.in);
     public static void main(String[] args){
         int weight;
