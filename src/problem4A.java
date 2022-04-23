@@ -3,6 +3,7 @@ public class problem4A {
     public static Scanner scanner =new Scanner(System.in);
     public static void main(String[] args){
         int weight;
+        System.out.println("Enter watermelon weight");
         weight = scanner.nextInt();
         Weight weight_check = new Weight();
         boolean w = weight_check.weightcheck(weight);

@@ -3,13 +3,15 @@ public class problem69A {
     public static Scanner scanner =new Scanner(System.in);
     public static void main(String[] args){
         int number;
+        System.out.println("Enter number:");
         number = scanner.nextInt();
-        int[] cor =new int[number*3];
-            for(int i=0; i< cor.length; i++){
-                cor[i] = scanner.nextInt();
+        int[] coordinate =new int[number*3];
+        System.out.println("Enter coordinates:");
+            for(int i=0; i< coordinate.length; i++){
+                coordinate[i] = scanner.nextInt();
         }
         equilibrium equilibrium = new equilibrium();
-        boolean eq = equilibrium.equilibriumcheck(number,cor);
+        boolean eq = equilibrium.equilibriumcheck(number,coordinate);
         if(eq)
             System.out.println("YES");
         else
